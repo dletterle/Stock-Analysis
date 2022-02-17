@@ -15,3 +15,4 @@ Created and sited new pattern with expert code
 Uploaded file to GitHub
 Re-wrote code to include logical statements in order to calcuate the yearly return; found the rows where DQ stock started and ended then tabulated the rows of data in between
 Uploaded new code to GitHub
+Created new worksheet called "All Stocks Analysis" to run analysis on all stocks in 2018, created a module to match the parameters of the new worksheet in VBA
