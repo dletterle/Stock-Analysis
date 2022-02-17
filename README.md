@@ -7,6 +7,7 @@ Original file uploaded to GitHub
 Created data headers utilizing Range() and Cell() methods
 Uploaded file to GitHub
 Added a row of white space 
-Created loop to calculate total volume
+Created loop to calculate total volume and year 
 Upload file to GitHub
 Error in workbook created new excel file
+Uploaded new excel file to GitHub
