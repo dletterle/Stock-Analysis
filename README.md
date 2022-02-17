@@ -13,3 +13,5 @@ Error in workbook created new excel file
 Uploaded new excel file to GitHub
 Created and sited new pattern with expert code
 Uploaded file to GitHub
+Re-wrote code to include logical statements in order to calcuate the yearly return; found the rows where DQ stock started and ended then tabulated the rows of data in between
+Uploaded new code to GitHub
