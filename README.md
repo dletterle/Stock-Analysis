@@ -14,6 +14,14 @@ Uploaded new excel file to GitHub
 Created and sited new pattern with expert code
 Uploaded file to GitHub
 Re-wrote code to include logical statements in order to calcuate the yearly return; found the rows where DQ stock started and ended then tabulated the rows of data in between
+Created Practice Workbook with the following code
+Sub Analysis()
+   Worksheets("Practice").Activate
+'Make a list of square numbers
+For i = 1 to 10
+    Cells(1, i).Value = i * i
+Next i
+End Sub
 Uploaded new code to GitHub
 Created new worksheet called "All Stocks Analysis" to run analysis on all stocks in 2018, created a module to match the parameters of the new worksheet in VBA
 Created a nested poll loop to put 1 in cells A1 to J1; A10 to J10 with the following code
