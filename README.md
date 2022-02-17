@@ -4,5 +4,8 @@ Dataset was downloaded
 Dataset was saved as macro "xslm"
 General subroutine MacroCheck was ran to make sure VBA is running correctly 
 Original file uploaded to GitHub
-Created data with Range() and Cell() methods
+Created data headers utilizing Range() and Cell() methods
 Uploaded file to GitHub
+Added a row of white space 
+Created loop to calculate total volume
+Upload file to GitHub
