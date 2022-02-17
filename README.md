@@ -11,3 +11,5 @@ Created loop to calculate total volume and year
 Upload file to GitHub
 Error in workbook created new excel file
 Uploaded new excel file to GitHub
+Created and sited new pattern with expert code
+Uploaded file to GitHub
