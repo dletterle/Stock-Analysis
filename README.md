@@ -3,8 +3,10 @@ Performing analysis on stock data to uncover trends and provide recommendations
 Dataset was downloaded
 Dataset was saved as macro "xslm"
 General subroutine MacroCheck was ran to make sure VBA is running correctly 
+Test Message ran with "Hello World!" in message box to check for correct syntax and macro enabled 
 Original file uploaded to GitHub
 Created data headers utilizing Range() and Cell() methods
+Practiced cell and range method by switching cell(3,1) to range(A3)
 Uploaded file to GitHub
 Added a row of white space 
 Created loop to calculate total volume and year 
