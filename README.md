@@ -36,3 +36,4 @@ For c = 1 To 10
     Next
  Next
  End Sub
+For skill drill 2.4.2 created a lengthy macro to run column by column alternating changing the color between the cells based on the values inside. Values were either positive or negative "1" to give the macro a value to run. The -1 cell was coded to be red and the 1 cell was coded to be black to give a checkerboard appearance
