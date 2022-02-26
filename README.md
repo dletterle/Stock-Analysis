@@ -22,6 +22,7 @@ The "VBA_Challenge.vbs" script was added to the Microsoft Visual Basic editor
 3d. A script was written that increases the "tickerIndex" if the next row's ticker doesn't match the previous row's ticker
 4. A "for" loop was used to loop through the aforementioned arrays to output the "Ticker", "TickerDailyVolume" and "Return" columns
 The stock analysis was run to confirm the analysis from 2017 and 2018 matched the information from the module where the screenshots were saved into a separate "Resources" folder 
+
    _Equation_
 
 **Deliverable 2**
