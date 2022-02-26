@@ -1,13 +1,16 @@
 # Stock-Analysis
 Performing analysis on stock data to uncover trends and provide recommendations
 **Deliverable 1**
-   _Prework_
+ 
+ _Prework_
+   
 The starter code "challenge_starter_code.vbs" was downloaded adn renamed to VBA_Challenge.vbs
 A "Resources" folder was created to hold the run-time pop-up messages after running the refactored analysis 
 The file "green_stocks.xlsm" was renamed to "VBA_Challenge.xlsm"
 The "VBA_Challenge.vbs" script was added to the Microsoft Visual Basic editor 
 
    _Steps_
+   
 1a. A "tickerIndex" variable was created and set to zero before iterating over all the rows 
 1b. Three out arrays were created with the following data types: "tickerVolumes" was created as a "Long" data type, "tickerStartingPrices" was created as a "Single" data type, and "tickerEndingPrices" was created as a "Single" data type
 2a. A "for" loop was created to initialize the "tickerVolumes" to zero
