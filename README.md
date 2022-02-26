@@ -1,5 +1,28 @@
 # Stock-Analysis
 Performing analysis on stock data to uncover trends and provide recommendations
+**Deliverable 1**
+   _Prework_
+The starter code "challenge_starter_code.vbs" was downloaded adn renamed to VBA_Challenge.vbs
+A "Resources" folder was created to hold the run-time pop-up messages after running the refactored analysis 
+The file "green_stocks.xlsm" was renamed to "VBA_Challenge.xlsm"
+The "VBA_Challenge.vbs" script was added to the Microsoft Visual Basic editor 
+
+   _Steps_
+1a. A "tickerIndex" variable was created and set to zero before iterating over all the rows 
+1b. Three out arrays were created with the following data types: "tickerVolumes" was created as a "Long" data type, "tickerStartingPrices" was created as a "Single" data type, and "tickerEndingPrices" was created as a "Single" data type
+2a. A "for" loop was created to initialize the "tickerVolumes" to zero
+2b. A "for" loop was created to loop over all the rows in the spreadsheet
+3a. Inside the "for" loopa script was written that increases the current "tickerVolumes" variable and adds the ticker volume for the current stock ticker 
+3b. An "if-then" statement was written to check if the current row is the first row with the selected "tickerIndex"; if so, it was assigned as the "tickerStartingPrices" variable
+3c. An if-then statement was written to check if the current row is the last row with the selected "tickerIndex"; if so, it was assigned as the "tickerEndingPrices" variable 
+3d. A script was written that increases the "tickerIndex" if the next row's ticker doesn't match the previous row's ticker
+4. A "for" loop was used to loop through the aforementioned arrays to output the "Ticker", "TickerDailyVolume" and "Return" columns
+The stock analysis was run to confirm the analysis from 2017 and 2018 matched the information from the module where the screenshots were saved into a separate "Resources" folder 
+   _Equation_
+
+**Deliverable 2**
+
+
 Dataset was downloaded
 Dataset was saved as macro "xslm"
 General subroutine MacroCheck was ran to make sure VBA is running correctly 
