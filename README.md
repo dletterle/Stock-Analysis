@@ -23,8 +23,54 @@ The "VBA_Challenge.vbs" script was added to the Microsoft Visual Basic editor
 4. A "for" loop was used to loop through the aforementioned arrays to output the "Ticker", "TickerDailyVolume" and "Return" columns
 The stock analysis was run to confirm the analysis from 2017 and 2018 matched the information from the module where the screenshots were saved into a separate "Resources" folder 
 
-    _Macro_
+    _Refactored Macro_
+
+1a.tickerIndex = 0
+1b. Arrays:
+Dim tickerVolumes(12) As Long
+Dim tickerStartingPrices(12) As Single
+Dim tickerEndingPrices(12) As Single
+
+2a.
+For i = 0 To 11
+    tickerVolumes(i) = 0
+    tickerStartingPrices(i) = 0
+    tickerEndingPrices(i) = 0
+Next i
+
+2b.
+For i = 2 To RowCount
+
+3a.
+tickerVolumes(tickerIndex) = tickerVolumes(tickerIndex) + Cells(i, 8).Value
+
+3b.
+If Cells(i, 1).Value = tickers(tickerIndex) And Cells(i - 1, 1).Value <> tickers(tickerIndex) Then
+tickerStartingPrices(tickerIndex) = Cells(i, 6).Value
+    End If
     
+3c.
+If Cells(i, 1).Value = tickers(tickerIndex) And Cells(i + 1, 1).Value <> tickers(tickerIndex) Then
+tickerEndingPrices(tickerIndex) = Cells(i, 6).Value
+     End If
+
+3d.
+If Cells(i, 1).Value = tickers(tickerIndex) And Cells(i + 1, 1).Value <> tickers(tickerIndex) Then
+tickerIndex = tickerIndex + 1
+End If
+
+Next i
+
+4.
+For i = 0 To 11
+    
+    Worksheets("All Stocks Analysis").Activate
+    Cells(4 + i, 1).Value = tickers(i)
+    Cells(4 + i, 2).Value = tickerVolumes(i)
+    Cells(4 + i, 3).Value = tickerEndingPrices(i) / tickerStartingPrices(i) - 1
+    
+Next i
+End Sub
 
 **Deliverable 2**
 
@@ -43,42 +89,3 @@ The execution times of the original script and the refactored script are signifi
 Clearly there are advantages and of refractoring code. Some advantages include making the code more "recognizeable" and easier to follow for other coders. This is because refractoring the code makes it "cleaner" and more oganized. This in turn also makes the code easier to read allowing it to be more simplified for support and updates, saving money and time in the future, and also and faster to maintain and "debug". Even with all these positives, like everything, there are some functional disadvantages. For example there would likely be a lot of re-testing for functionality. I encountered the same practice when refractoring, it took a good bit of time and I was required to go line by line to ensure correct functionality. Additionally, this was also a "smaller" script of code to refactor and there macros much larger that could take so much to complete it would not be a cost savings. 
 
 These pros and cons apply to refractoring the original VBA script because as shown in the resources folder and mentioned above, after refractoring, the time it takes to run the code is shorter for both years of analysis (2017 and 2018). Moreover, for me personally, I was able to refractor the code in to a more organized and easy to read script for coders in the future in the event they were to review this specific macro. 
-
-
-Dataset was downloaded
-Dataset was saved as macro "xslm"
-General subroutine MacroCheck was ran to make sure VBA is running correctly 
-Test Message ran with "Hello World!" in message box to check for correct syntax and macro enabled 
-Original file uploaded to GitHub
-Created data headers utilizing Range() and Cell() methods
-Practiced cell and range method by switching cell(3,1) to range(A3)
-Uploaded file to GitHub
-Added a row of white space 
-Created loop to calculate total volume and year 
-Upload file to GitHub
-Error in workbook created new excel file
-Uploaded new excel file to GitHub
-Created and sited new pattern with expert code
-Uploaded file to GitHub
-Re-wrote code to include logical statements in order to calcuate the yearly return; found the rows where DQ stock started and ended then tabulated the rows of data in between
-Created Practice Workbook with the following code
-Sub Analysis()
-   Worksheets("Practice").Activate
-'Make a list of square numbers
-For i = 1 to 10
-    Cells(1, i).Value = i * i
-Next i
-End Sub
-Uploaded new code to GitHub
-Created new worksheet called "All Stocks Analysis" to run analysis on all stocks in 2018, created a module to match the parameters of the new worksheet in VBA
-Created a nested poll loop to put 1 in cells A1 to J1; A10 to J10 with the following code
-Sub nestedLoopFor()
-  Worksheets("PracticeLoop").Activate
-  Dim r As Integer, c As Integer
-For r = 1 To 10
-For c = 1 To 10
-    Cells(r, c).Value = 1
-    Next
- Next
- End Sub
-For skill drill 2.4.2 created a lengthy macro to run column by column alternating changing the color between the cells based on the values inside. Values were either positive or negative "1" to give the macro a value to run. The -1 cell was coded to be red and the 1 cell was coded to be black to give a checkerboard appearance
