@@ -25,45 +25,43 @@ The stock analysis was run to confirm the analysis from 2017 and 2018 matched th
 
     _Refactored Macro_
 
-1a.tickerIndex = 0
-1b. Arrays:
-Dim tickerVolumes(12) As Long
-Dim tickerStartingPrices(12) As Single
-Dim tickerEndingPrices(12) As Single
+1a. tickerIndex = 0
 
-2a.
-For i = 0 To 11
-    tickerVolumes(i) = 0
-    tickerStartingPrices(i) = 0
-    tickerEndingPrices(i) = 0
-Next i
+1b. Arrays:
+  Dim tickerVolumes(12) As Long
+  Dim tickerStartingPrices(12) As Single
+  Dim tickerEndingPrices(12) As Single
+
+2a. For i = 0 To 11
+  tickerVolumes(i) = 0
+  tickerStartingPrices(i) = 0
+  tickerEndingPrices(i) = 0
+  Next i
 
 2b.
-For i = 2 To RowCount
+ For i = 2 To RowCount
 
 3a.
-tickerVolumes(tickerIndex) = tickerVolumes(tickerIndex) + Cells(i, 8).Value
+  tickerVolumes(tickerIndex) = tickerVolumes(tickerIndex) + Cells(i, 8).Value
 
 3b.
-If Cells(i, 1).Value = tickers(tickerIndex) And Cells(i - 1, 1).Value <> tickers(tickerIndex) Then
-tickerStartingPrices(tickerIndex) = Cells(i, 6).Value
+  If Cells(i, 1).Value = tickers(tickerIndex) And Cells(i - 1, 1).Value <> tickers(tickerIndex) Then
+  tickerStartingPrices(tickerIndex) = Cells(i, 6).Value
     End If
     
 3c.
-If Cells(i, 1).Value = tickers(tickerIndex) And Cells(i + 1, 1).Value <> tickers(tickerIndex) Then
-tickerEndingPrices(tickerIndex) = Cells(i, 6).Value
+  If Cells(i, 1).Value = tickers(tickerIndex) And Cells(i + 1, 1).Value <> tickers(tickerIndex) Then
+  tickerEndingPrices(tickerIndex) = Cells(i, 6).Value
      End If
 
 3d.
-If Cells(i, 1).Value = tickers(tickerIndex) And Cells(i + 1, 1).Value <> tickers(tickerIndex) Then
-tickerIndex = tickerIndex + 1
-End If
+  If Cells(i, 1).Value = tickers(tickerIndex) And Cells(i + 1, 1).Value <> tickers(tickerIndex) Then
+  tickerIndex = tickerIndex + 1
+  End If
 
-Next i
+  Next i
 
-4.
-For i = 0 To 11
-    
+4. For i = 0 To 11    
     Worksheets("All Stocks Analysis").Activate
     Cells(4 + i, 1).Value = tickers(i)
     Cells(4 + i, 2).Value = tickerVolumes(i)
