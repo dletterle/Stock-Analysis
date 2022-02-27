@@ -3,14 +3,14 @@ Performing analysis on stock data to uncover trends and provide recommendations
 
 **Deliverable 1**
  
- _Prework_
+  _Prework_
    
 The starter code "challenge_starter_code.vbs" was downloaded adn renamed to VBA_Challenge.vbs
 A "Resources" folder was created to hold the run-time pop-up messages after running the refactored analysis 
 The file "green_stocks.xlsm" was renamed to "VBA_Challenge.xlsm"
 The "VBA_Challenge.vbs" script was added to the Microsoft Visual Basic editor 
 
-   _Steps_
+    _Steps_
    
 1a. A "tickerIndex" variable was created and set to zero before iterating over all the rows 
 1b. Three out arrays were created with the following data types: "tickerVolumes" was created as a "Long" data type, "tickerStartingPrices" was created as a "Single" data type, and "tickerEndingPrices" was created as a "Single" data type
@@ -23,9 +23,24 @@ The "VBA_Challenge.vbs" script was added to the Microsoft Visual Basic editor
 4. A "for" loop was used to loop through the aforementioned arrays to output the "Ticker", "TickerDailyVolume" and "Return" columns
 The stock analysis was run to confirm the analysis from 2017 and 2018 matched the information from the module where the screenshots were saved into a separate "Resources" folder 
 
-   _Equation_
+    _Macro_
+    
 
 **Deliverable 2**
+
+ _Section 1 Overview_
+
+The purpose of this assignment was to use VBA to add an even more analytical power to Excel. In essence, the assignment involves utilizing VBA to create a script to better assist Steve, a somewhat savvy person in Excel with further marcos and analysis for adequate assessment and decision-making when reviewing stocks to invest for Steve's parents. 
+
+ _Section 2 Results_
+
+When reviewing the results, the stock performance between 2017 and 2018 was noticeably different; as well as the execution times. On one hand, comparing the year 2017 to 2018 out of the twelve stocks that were reviewed, 11 of them were "green" which means showed a positive return based on the macro. On the other hand, in 2018 10 ticker stocks were "red" which means depiected a negative return based on the macro. A deeper look into the stocks in 2017, shows that there was not just a slight positive return, but some ticker stocks such as DQ, ENPH, FSLR, and SEDG had a over 100% return which means the initial investment was at least doubled. As in a 100% positive return means the stock doubled in initial investment. 
+The execution times of the original script and the refactored script appear to be significantly different. In the original script, the run time for 2017 was 0.765625 and the run time for 2018 was 0.7617188. After the script had been refactored, the run time for 2017 was 0.1328125 and the rune time for 2018 was 0.1015625 (all screenshots of the difference in run times for each year are available in the resource folder). 
+
+ _Section 3 Summary_
+
+
+
 
 
 Dataset was downloaded
