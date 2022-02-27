@@ -35,11 +35,12 @@ The purpose of this assignment was to use VBA to add an even more analytical pow
  _Section 2 Results_
 
 When reviewing the results, the stock performance between 2017 and 2018 was noticeably different; as well as the execution times. On one hand, comparing the year 2017 to 2018 out of the twelve stocks that were reviewed, 11 of them were "green" which means showed a positive return based on the macro. On the other hand, in 2018 10 ticker stocks were "red" which means depiected a negative return based on the macro. A deeper look into the stocks in 2017, shows that there was not just a slight positive return, but some ticker stocks such as DQ, ENPH, FSLR, and SEDG had a over 100% return which means the initial investment was at least doubled. As in a 100% positive return means the stock doubled in initial investment. 
-The execution times of the original script and the refactored script appear to be significantly different. In the original script, the run time for 2017 was 0.765625 and the run time for 2018 was 0.7617188. After the script had been refactored, the run time for 2017 was 0.1328125 and the rune time for 2018 was 0.1015625 (all screenshots of the difference in run times for each year are available in the resource folder). 
+
+The execution times of the original script and the refactored script are significantly different. In the original script, the run time for 2017 was 0.765625 and the run time for 2018 was 0.7617188. After the script had been refactored, the run time for 2017 was 0.1328125 and the rune time for 2018 was 0.1015625 (all screenshots of the difference in run times for each year are available in the resource folder). 
 
  _Section 3 Summary_
 
-
+Clearly there are advantages and disadvanteges of refractoring code. Some advantages include making the code more "recognizeable" and easier to follow for other coders. This is because refractoring the code makes it "cleaner" and more oganized. This in turn also makes the code easier to read allowing it to be more simplified for support and updates, saving money and time in the future, and also and faster to maintain and "debug". Even with all these positives, like everything, there are some functional disadvantages. For example there would likely be a lot of re-testing for functionality. I encountered the same practice when refractoring, it took a good bit of time and I was required to go line by line to ensure correct functionality. Additionally, this was also a "smaller" script of code to refactor and there macros much larger that could take so much to complete it would not be a cost savings. 
 
 
 
